@@ -72,5 +72,4 @@ p value is 0.001 which is less than 0.05. So we can reject the null hypothesis a
 
 Original question: Is sex a factor of dying from Covid19?
 
-
-
+We reject the null hypothesis and conclude that theres a relationship between sex and dying of Covid19. More specifically, that males are more likely to die of it than females are. The graphical summary and numerical results show that men have an increased likelihood of death compared to women. The odds ratio also states that males are 2.3 times more likely to die of Covid19 than females.
