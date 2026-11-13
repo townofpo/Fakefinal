@@ -66,6 +66,11 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+p value is 0.001 which is less than 0.05. So we can reject the null hypothesis and conclude that there is a connection between sex and dying of Covid19. 
 
 # Conclusions
+
+Original question: Is sex a factor of dying from Covid19?
+
+
 
