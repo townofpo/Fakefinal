@@ -48,7 +48,7 @@ barchartGC(~result + sex,data=kData)
 barchartGC(~result + sex,data=kData, type="percent")
 
 ```
-The graph suggests that males on average die more due to Covid compared to females.
+The graph suggests that males on average die more due to Covid compared to females!
 
 ## Numerical results
 
