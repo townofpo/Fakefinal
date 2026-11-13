@@ -28,6 +28,12 @@ Research Question: - Is dying independent of sex?
 
 # Introduction
 
+Data from K Data. Question is: Is sex a factor of dying from Covid19?
+
+$H_0$ : No, sex is not a factor of dying from Covid19. Males and females are equally likely to die of it.
+
+$H_A$ : YES, sex is a factor of dying from Covid19.... Males and females may die at different rates from it! 
+
 # Data Results
 
 ## Graphical results    
