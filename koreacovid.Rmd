@@ -13,6 +13,7 @@ options(digits=2)
 require(tidyverse)
 require(tigerstats)
 require(lubridate)
+require(mosaic)
 kRdata <- read.csv(file = 'kRdata.csv')
 kRdata <- kRdata %>%
 mutate(across(where(is.character), as.factor))
@@ -34,13 +35,37 @@ $H_0$ : No, sex is not a factor of dying from Covid19. Males and females are equ
 
 $H_A$ : YES, sex is a factor of dying from Covid19.... Males and females may die at different rates from it! 
 
+# Methods
+
+Sex is categorical, result is also categorical. So we use the Cat~Cat helper file!!!!!
+
 # Data Results
 
-## Graphical results    
+## Graphical results 
+
+```{r}
+barchartGC(~result + sex,data=kData)
+barchartGC(~result + sex,data=kData, type="percent")
+
+```
+The graph suggests that males on average die more due to Covid compared to females.
 
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kData)
+rowPerc(table1)
+colPerc(table1)
+```
+From these results we can see that out of 100, 64% of dead Covid19 victims were male, and 36% were female. we can clearly deduce that males appear to have a higher death rate, being almost twice as likely to die!
+
 ## Inferential results 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 # Conclusions
 
